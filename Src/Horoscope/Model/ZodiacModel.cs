@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Horoscope.Model
+﻿namespace Horoscope.Model
 {
     public class ZodiacModel
     {
@@ -19,7 +15,7 @@ namespace Horoscope.Model
         internal ZodiacDateModel ZodiacStartDate { get; set; }
         internal ZodiacDateModel ZodiacEndDate { get; set; }
         public string ZodiacDuration { get { return $"{ToMonth(ZodiacStartDate.Month)} {ZodiacStartDate.Date} to {ToMonth(ZodiacEndDate.Month)} {ZodiacEndDate.Date}"; } }
-
+        
         internal string ToMonth(int month)
         {
             switch (month)

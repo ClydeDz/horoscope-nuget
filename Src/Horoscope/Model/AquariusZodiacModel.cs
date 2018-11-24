@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Horoscope.Model
+﻿namespace Horoscope.Model
 {
     internal class AquariusZodiacModel : ZodiacModel
     {
@@ -14,7 +10,7 @@ namespace Horoscope.Model
 
         internal static AquariusZodiacModel GetAquariusModel()
         {
-            return new AquariusZodiacModel("Aquarius", "The Water-Bearer", new ZodiacDateModel(1, 1), new ZodiacDateModel(21, 3));
+            return new AquariusZodiacModel("Aquarius", "The Water-Bearer", new ZodiacDateModel(20, 1), new ZodiacDateModel(18, 2));
         }
     }
 }
