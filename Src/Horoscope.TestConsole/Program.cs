@@ -8,13 +8,13 @@ namespace Horoscope.TestConsole
         {
             Console.WriteLine(DateTime.Today.Month);
 
-            var symbol = Zodiac.ConvertDateToZodiacSign(new DateTime(1966, 2, 12));
+            var symbol = Zodiac.GetZodiacSignForDate(new DateTime(1966, 2, 12));
             Console.WriteLine(symbol.ZodiacName +" "+ symbol.ZodiacDuration);
 
-            symbol = Zodiac.GetZodiacSymbolDetails(ZodiacSymbols.Aquarius);
+            symbol = Zodiac.GetZodiacSign(ZodiacSigns.Aquarius);
             Console.WriteLine(symbol.ZodiacDuration);
 
-            var allSymbols = Zodiac.GetAllZodiacSymbolDetails();
+            var allSymbols = Zodiac.GetAllZodiacSigns();
             foreach (var sym in allSymbols)
             {
                 Console.WriteLine(sym.ZodiacName);
