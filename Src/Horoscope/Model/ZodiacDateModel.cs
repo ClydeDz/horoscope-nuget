@@ -1,6 +1,6 @@
 ﻿namespace Horoscope.Model
 {
-    public class ZodiacDateModel
+    internal class ZodiacDateModel
     {
         internal ZodiacDateModel(int date, int month)
         {

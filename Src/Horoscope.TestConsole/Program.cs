@@ -7,10 +7,10 @@ namespace Horoscope.TestConsole
         static void Main(string[] args)
         {
             Console.WriteLine(DateTime.Today.Month);
-
+            
             var symbol = Zodiac.GetZodiacSignForDate(new DateTime(1966, 2, 12));
             Console.WriteLine(symbol.ZodiacName +" "+ symbol.ZodiacDuration);
-
+            
             symbol = Zodiac.GetZodiacSign(ZodiacSigns.Aquarius);
             Console.WriteLine(symbol.ZodiacDuration);
 

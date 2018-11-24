@@ -2,7 +2,7 @@
 {
     public class ZodiacModel
     {
-        public ZodiacModel(string name, string english, ZodiacDateModel start, ZodiacDateModel end)
+        internal ZodiacModel(string name, string english, ZodiacDateModel start, ZodiacDateModel end)
         {
             ZodiacName = name;
             ZodiacEnglishTranslation = english;
