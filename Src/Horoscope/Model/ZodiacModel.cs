@@ -1,5 +1,8 @@
 ﻿namespace Horoscope.Model
 {
+    /// <summary>
+    /// The Zodiac sign object containing information on each Zodiac sign.
+    /// </summary>
     public class ZodiacModel
     {
         internal ZodiacModel(string name, string english, ZodiacDateModel start, ZodiacDateModel end)
@@ -10,12 +13,28 @@
             ZodiacEndDate = end;
         }
 
+        /// <summary>
+        /// The Zodiac latin name. 
+        /// Example: Capricorn.
+        /// </summary>
         public string ZodiacName { get; set; }
+
+        /// <summary>
+        /// The English translation of the Zodiac name.
+        /// Example: The Goat.
+        /// </summary>
         public string ZodiacEnglishTranslation { get; set; }
-        internal ZodiacDateModel ZodiacStartDate { get; set; }
-        internal ZodiacDateModel ZodiacEndDate { get; set; }
+
+        /// <summary>
+        /// The duration for this Zodiac sign.
+        /// Example: December 22 to January 19.
+        /// </summary>
         public string ZodiacDuration { get { return $"{ToMonth(ZodiacStartDate.Month)} {ZodiacStartDate.Date} to {ToMonth(ZodiacEndDate.Month)} {ZodiacEndDate.Date}"; } }
-        
+
+        internal ZodiacDateModel ZodiacStartDate { get; set; }
+
+        internal ZodiacDateModel ZodiacEndDate { get; set; }
+
         internal string ToMonth(int month)
         {
             switch (month)

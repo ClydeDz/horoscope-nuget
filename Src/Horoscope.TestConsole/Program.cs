@@ -11,7 +11,7 @@ namespace Horoscope.TestConsole
             var symbol = Zodiac.GetZodiacSignForDate(new DateTime(1966, 2, 12));
             Console.WriteLine(symbol.ZodiacName +" "+ symbol.ZodiacDuration);
             
-            symbol = Zodiac.GetZodiacSign(ZodiacSigns.Aquarius);
+            symbol = Zodiac.GetZodiacSign(ZodiacSigns.Capricorn);
             Console.WriteLine(symbol.ZodiacDuration);
 
             var allSymbols = Zodiac.GetAllZodiacSigns();
