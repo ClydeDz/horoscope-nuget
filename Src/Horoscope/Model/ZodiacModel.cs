@@ -3,27 +3,14 @@
     /// <summary>
     /// The Zodiac sign object containing information on each Zodiac sign.
     /// </summary>
-    public class ZodiacModel
+    public class ZodiacModel: BaseZodiacModel
     {
         internal ZodiacModel(string name, string english, ZodiacDateModel start, ZodiacDateModel end)
+            :base(name, english)
         {
-            ZodiacName = name;
-            ZodiacEnglishTranslation = english;
             ZodiacStartDate = start;
             ZodiacEndDate = end;
         }
-
-        /// <summary>
-        /// The Zodiac latin name. 
-        /// Example: Capricorn.
-        /// </summary>
-        public string ZodiacName { get; set; }
-
-        /// <summary>
-        /// The English translation of the Zodiac name.
-        /// Example: The Goat.
-        /// </summary>
-        public string ZodiacEnglishTranslation { get; set; }
 
         /// <summary>
         /// The duration for this Zodiac sign.
