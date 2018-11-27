@@ -1,4 +1,5 @@
-﻿using Horoscope.Model;
+﻿using Horoscope.Helpers;
+using Horoscope.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -36,7 +37,7 @@ namespace Horoscope
         /// <returns>A Zodiac sign object.</returns>
         public static ZodiacModel GetZodiacSignForDate(DateTime requestedDateTime)
         {
-            var zodiacSymbol = InitializeAndGetAllZodiacSigns().Values
+            var zodiacSymbol = ZodiacHelper.InitializeAndGetAllZodiacSigns().Values
                 .Where(d => 
                     (d.ZodiacStartDate.Month == requestedDateTime.Month && requestedDateTime.Day >= d.ZodiacStartDate.Date) 
                     || (d.ZodiacEndDate.Month == requestedDateTime.Month && requestedDateTime.Day <= d.ZodiacEndDate.Date))                
@@ -52,7 +53,7 @@ namespace Horoscope
         /// <returns>A Zodiac sign object.</returns>
         public static ZodiacModel GetZodiacSign(ZodiacSigns requestedZodiacSign)
         {
-            InitializeAndGetAllZodiacSigns().TryGetValue(requestedZodiacSign, out ZodiacModel zodiacSign);
+            ZodiacHelper.InitializeAndGetAllZodiacSigns().TryGetValue(requestedZodiacSign, out ZodiacModel zodiacSign);
             return zodiacSign;
         }
 
@@ -62,31 +63,7 @@ namespace Horoscope
         /// <returns>List of Zodiac signs each as a Zodiac sign object.</returns>
         public static List<ZodiacModel> GetAllZodiacSigns()
         {
-            return InitializeAndGetAllZodiacSigns().Values.ToList();
-        }
-
-        /// <summary>
-        /// Loads all Zodiac signs and returns a complete object.
-        /// </summary>
-        /// <returns>Dictionary collection of Zodiac signs.</returns>
-        private static Dictionary<ZodiacSigns, ZodiacModel> InitializeAndGetAllZodiacSigns()
-        {
-            Dictionary<ZodiacSigns, ZodiacModel> zodiacSigns = new Dictionary<ZodiacSigns, ZodiacModel>
-            {
-                { ZodiacSigns.Pisces, PiscesZodiacModel.GetPiscesModel() },
-                { ZodiacSigns.Aquarius, AquariusZodiacModel.GetAquariusModel() },
-                { ZodiacSigns.Leo, LeoZodiacModel.GetLeoModel() },
-                { ZodiacSigns.Taurus, TaurusZodiacModel.GetTaurusModel() },
-                { ZodiacSigns.Scorpio, ScorpioZodiacModel.GetScorpioModel() },
-                { ZodiacSigns.Sagittarius, SagittariusZodiacModel.GetSagittariusModel() },
-                { ZodiacSigns.Aries, AriesZodiacModel.GetAriesModel() },
-                { ZodiacSigns.Gemini, GeminiZodiacModel.GetGeminiModel() },
-                { ZodiacSigns.Capricorn, CapricornZodiacModel.GetCapricornModel() },
-                { ZodiacSigns.Libra, LibraZodiacModel.GetLibraModel() },
-                { ZodiacSigns.Virgo, VirgoZodiacModel.GetVirgoModel() },
-                { ZodiacSigns.Cancer, CancerZodiacModel.GetCancerModel() }
-            };
-            return zodiacSigns;
+            return ZodiacHelper.InitializeAndGetAllZodiacSigns().Values.ToList();
         }
     }
 }
