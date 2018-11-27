@@ -1,10 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Horoscope.Model
+﻿namespace Horoscope.Model
 {
-    class OxChineseZodiacModel
+    internal class OxChineseZodiacModel: ChineseZodiacModel
     {
+        internal OxChineseZodiacModel(string name, string english, string personality)
+                  : base(name, english, personality)
+        {
+
+        }
+
+        internal static OxChineseZodiacModel GetOxModel()
+        {
+            return new OxChineseZodiacModel("chǒu", "Ox", "Ox	people are dependable & calm. They are good listeners & have very strong ideas.");
+        }
     }
 }

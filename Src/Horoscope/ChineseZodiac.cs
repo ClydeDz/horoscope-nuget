@@ -22,11 +22,33 @@ namespace Horoscope
         Pig
     }
 
+    public enum ChineseZodiacElements
+    {
+        Wood,
+        Fire,
+        Earth,
+        Metal,
+        Water
+    }
+
     public class ChineseZodiac
     {
-        public static void GetChineseZodiacAnimal(DateTime requestedDateTime)
+        public static ChineseZodiacModel GetChineseZodiacAnimal(DateTime requestedDateTime)
         {
             ChineseZodiacSigns chineseZodiacSign = Get(requestedDateTime.Year);
+            InitializeAndGetAllZodiacSigns().TryGetValue(chineseZodiacSign, out ChineseZodiacModel chineseZodiacModel);
+            return chineseZodiacModel;
+        }
+
+        /// <summary>
+        /// Get details of the Zodiac sign supplied.
+        /// </summary>
+        /// <param name="requestedZodiacSign">The Zodiac sign that you want more details about.</param>
+        /// <returns>A Zodiac sign object.</returns>
+        public static ChineseZodiacModel GetZodiacSign(ChineseZodiacSigns requestedZodiacSign)
+        {
+            InitializeAndGetAllZodiacSigns().TryGetValue(requestedZodiacSign, out ChineseZodiacModel zodiacSign);
+            return zodiacSign;
         }
 
         /// <summary>
@@ -47,7 +69,7 @@ namespace Horoscope
         /// <remarks>
         /// Math credits: https://stackoverflow.com/a/22047886
         /// </remarks>
-        private static ChineseZodiacSigns Get(int year)
+        internal static ChineseZodiacSigns Get(int year)
         {
             int a = (year - 4);
             int b = (a / 12) * 12;
@@ -62,9 +84,20 @@ namespace Horoscope
         {
             Dictionary<ChineseZodiacSigns, ChineseZodiacModel> zodiacSigns = new Dictionary<ChineseZodiacSigns, ChineseZodiacModel>
             {
-                { ChineseZodiacSigns.Rat, RatChineseZodiacModel.GetRatModel() }
+                { ChineseZodiacSigns.Rat, RatChineseZodiacModel.GetRatModel() },
+                { ChineseZodiacSigns.Ox, OxChineseZodiacModel.GetOxModel() },
+                { ChineseZodiacSigns.Tiger, TigerChineseZodiacModel.GetTigerModel() },
+                { ChineseZodiacSigns.Rabbit, RabbitChineseZodiacModel.GetRabbitModel() },
+                { ChineseZodiacSigns.Dragon, DragonChineseZodiacModel.GetDragonModel() },
+                { ChineseZodiacSigns.Snake, SnakeChineseZodiacModel.GetSnakeModel() },
+                { ChineseZodiacSigns.Horse, HorseChineseZodiacModel.GetHorseModel() },
+                { ChineseZodiacSigns.Goat, GoatChineseZodiacModel.GetGoatModel() },
+                { ChineseZodiacSigns.Monkey, MonkeyChineseZodiacModel.GetMonkeyModel() },
+                { ChineseZodiacSigns.Rooster, RoosterChineseZodiacModel.GetRoosterModel() },
+                { ChineseZodiacSigns.Dog, DogChineseZodiacModel.GetDogModel() },
+                { ChineseZodiacSigns.Pig, PigChineseZodiacModel.GetPigModel() }
             };
-            return zodiacSigns;
+            return zodiacSigns;      
         }
     }
 }

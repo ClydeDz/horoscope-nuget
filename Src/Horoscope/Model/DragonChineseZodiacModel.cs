@@ -1,10 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Horoscope.Model
+﻿namespace Horoscope.Model
 {
-    class DragonChineseZodiacModel
+    internal class DragonChineseZodiacModel: ChineseZodiacModel
     {
+        internal DragonChineseZodiacModel(string name, string english, string personality)
+                 : base(name, english, personality)
+        {
+
+        }
+
+        internal static DragonChineseZodiacModel GetDragonModel()
+        {
+            return new DragonChineseZodiacModel("chén", "Dragon", "Dragon people have good health & lots of energy. They are good friends because they listen well.");
+        }
     }
 }
