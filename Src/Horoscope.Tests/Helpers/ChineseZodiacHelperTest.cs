@@ -37,5 +37,16 @@ namespace Horoscope.Tests.Helpers
             ChineseZodiacHelper.InitializeAndGetAllZodiacSigns().TryGetValue(ChineseZodiacSigns.Goat, out Model.ChineseZodiacModel zodiacModel);
             Assert.Equal(ChineseZodiacSigns.Goat.ToString(), zodiacModel.ZodiacEnglishTranslation);
         }
+
+        [Theory]
+        [InlineData(2018, 8)]
+        [InlineData(1952, 2)]
+        [InlineData(1969, 9)]
+        [InlineData(1903, 3)]
+        public void GetRightMostDigitOfYear_Test(int year, int expected)
+        {
+            var lastDigit = ChineseZodiacHelper.GetRightMostDigitOfYear(year);
+            Assert.Equal(expected, lastDigit);
+        }
     }
 }

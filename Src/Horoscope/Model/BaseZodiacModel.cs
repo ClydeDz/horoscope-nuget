@@ -9,12 +9,12 @@
         }
 
         /// <summary>
-        /// The native Zodiac name. 
+        /// The native zodiac name. 
         /// </summary>
         public string ZodiacName { get; set; }
 
         /// <summary>
-        /// The English translation of the Zodiac name.
+        /// The English translation of the zodiac name.
         /// </summary>
         public string ZodiacEnglishTranslation { get; set; }
     }

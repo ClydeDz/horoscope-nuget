@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using Xunit;
 
 namespace Horoscope.Tests
@@ -10,9 +11,9 @@ namespace Horoscope.Tests
         [InlineData(1952, "Dragon")]
         [InlineData(1969, "Rooster")]
         [InlineData(1903, "Rabbit")]
-        public void GetChineseZodiacAnimal_Test(int year, string zodiacSign)
+        public void GetZodiacSignForDate_Test(int year, string zodiacSign)
         {
-            var symbol = ChineseZodiac.GetChineseZodiacAnimal(new DateTime(year, 4, 1));
+            var symbol = ChineseZodiac.GetZodiacSignForDate(new DateTime(year, 4, 1));
             Assert.Equal(zodiacSign, symbol.ZodiacEnglishTranslation);
         }
 
@@ -39,6 +40,44 @@ namespace Horoscope.Tests
             Assert.Equal("shēn", symbols.ZodiacName);
             Assert.Equal("Monkey", symbols.ZodiacEnglishTranslation);
             Assert.Equal("Monkey people are very funny. They can always make others laugh & are good problem solvers.", symbols.ZodiacPersonality);
+        }
+
+        [Fact]
+        public void GetAllZodiacSignsForAnElement_Fire_Test()
+        {
+            var symbols = ChineseZodiac.GetAllZodiacSignsForAnElement(ChineseZodiacElements.Fire);
+            var snakeAnimal = symbols.Where(s => s.ZodiacEnglishTranslation == ChineseZodiacSigns.Snake.ToString()).FirstOrDefault();
+            var horseAnimal = symbols.Where(s => s.ZodiacEnglishTranslation == ChineseZodiacSigns.Horse.ToString()).FirstOrDefault();
+            Assert.Equal(2, symbols.Count);
+            Assert.NotNull(snakeAnimal);
+            Assert.NotNull(horseAnimal);
+        }
+
+        [Fact]
+        public void GetAllZodiacSignsForAnElement_Earth_Test()
+        {
+            var symbols = ChineseZodiac.GetAllZodiacSignsForAnElement(ChineseZodiacElements.Earth);
+            var oxAnimal = symbols.Where(s => s.ZodiacEnglishTranslation == ChineseZodiacSigns.Ox.ToString()).FirstOrDefault();
+            var dragonAnimal = symbols.Where(s => s.ZodiacEnglishTranslation == ChineseZodiacSigns.Dragon.ToString()).FirstOrDefault();
+            var goatAnimal = symbols.Where(s => s.ZodiacEnglishTranslation == ChineseZodiacSigns.Goat.ToString()).FirstOrDefault();
+            var dogAnimal = symbols.Where(s => s.ZodiacEnglishTranslation == ChineseZodiacSigns.Dog.ToString()).FirstOrDefault();
+            Assert.Equal(4, symbols.Count);
+            Assert.NotNull(oxAnimal);
+            Assert.NotNull(dragonAnimal);
+            Assert.NotNull(goatAnimal);
+            Assert.NotNull(dogAnimal);
+        }
+
+        [Theory]
+        [InlineData(2018, ChineseZodiacElements.Earth)]
+        [InlineData(1952, ChineseZodiacElements.Water)]
+        [InlineData(1964, ChineseZodiacElements.Wood)]
+        [InlineData(1907, ChineseZodiacElements.Fire)]
+        [InlineData(2000, ChineseZodiacElements.Metal)]
+        public void GetChineseZodiacElementBasedOnYear_Test(int year, ChineseZodiacElements expectedZodiacElement)
+        {
+            var actualZodiacElement = ChineseZodiac.GetChineseZodiacElementBasedOnYear(year);
+            Assert.Equal(expectedZodiacElement, actualZodiacElement);
         }
     }
 }

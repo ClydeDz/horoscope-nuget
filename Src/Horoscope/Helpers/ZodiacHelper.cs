@@ -6,9 +6,9 @@ namespace Horoscope.Helpers
     internal class ZodiacHelper
     {
         /// <summary>
-        /// Loads all Zodiac signs and returns a complete object.
+        /// Loads all zodiac signs and returns a complete object.
         /// </summary>
-        /// <returns>Dictionary collection of Zodiac signs.</returns>
+        /// <returns>Dictionary collection of zodiac signs.</returns>
         internal static Dictionary<ZodiacSigns, ZodiacModel> InitializeAndGetAllZodiacSigns()
         {
             Dictionary<ZodiacSigns, ZodiacModel> zodiacSigns = new Dictionary<ZodiacSigns, ZodiacModel>

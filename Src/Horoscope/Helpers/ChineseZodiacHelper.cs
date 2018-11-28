@@ -7,10 +7,10 @@ namespace Horoscope.Helpers
     internal class ChineseZodiacHelper
     {
         /// <summary>
-        /// Given a year, calculates the Chinese Zodiac animal.
+        /// Given a year, calculates the Chinese zodiac animal.
         /// </summary>
         /// <param name="year">Year.</param>
-        /// <returns>Returns the Chinese Zodiac animal.</returns>
+        /// <returns>Returns the Chinese zodiac animal.</returns>
         /// <remarks>
         /// Math credits: https://stackoverflow.com/a/22047886
         /// </remarks>
@@ -20,11 +20,21 @@ namespace Horoscope.Helpers
             int b = (a / 12) * 12;
             return (ChineseZodiacSigns)(Math.Abs(a - b));
         }
+        
+        /// <summary>
+        /// Gets the right-most digit of the year supplied.
+        /// </summary>
+        /// <param name="year">The year you want the right-most digit for.</param>
+        /// <returns>Returns the right-most digit of the year supplied.</returns>
+        internal static int GetRightMostDigitOfYear(int year)
+        {
+            return Convert.ToInt32(year.ToString().Substring(year.ToString().Length - 1));
+        }
 
         /// <summary>
-        /// Loads all Zodiac signs and returns a complete object.
+        /// Loads all zodiac signs and returns a complete object.
         /// </summary>
-        /// <returns>Dictionary collection of Zodiac signs.</returns>
+        /// <returns>Dictionary collection of zodiac signs.</returns>
         internal static Dictionary<ChineseZodiacSigns, ChineseZodiacModel> InitializeAndGetAllZodiacSigns()
         {
             Dictionary<ChineseZodiacSigns, ChineseZodiacModel> zodiacSigns = new Dictionary<ChineseZodiacSigns, ChineseZodiacModel>

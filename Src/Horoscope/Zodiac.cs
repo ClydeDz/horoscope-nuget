@@ -7,7 +7,7 @@ using System.Linq;
 namespace Horoscope
 {
     /// <summary>
-    /// List of all Zodiac signs
+    /// List of all zodiac signs
     /// </summary>
     public enum ZodiacSigns
     {
@@ -26,15 +26,15 @@ namespace Horoscope
     }
     
     /// <summary>
-    /// Contains all methods pertaining to Zodiac signs.
+    /// Contains all methods pertaining to zodiac signs.
     /// </summary>
     public class Zodiac
-    {        
+    {
         /// <summary>
-        /// Gets the Zodiac sign for the date supplied.
+        /// Gets the zodiac sign for the date supplied.
         /// </summary>
-        /// <param name="requestedDateTime">The date for which you want the Zodiac sign.</param>
-        /// <returns>A Zodiac sign object.</returns>
+        /// <param name="requestedDateTime">The date for which you want the zodiac sign.</param>
+        /// <returns>A zodiac sign object.</returns>
         public static ZodiacModel GetZodiacSignForDate(DateTime requestedDateTime)
         {
             var zodiacSymbol = ZodiacHelper.InitializeAndGetAllZodiacSigns().Values
@@ -47,10 +47,10 @@ namespace Horoscope
         }
 
         /// <summary>
-        /// Get details of the Zodiac sign supplied.
+        /// Get details of the zodiac sign supplied.
         /// </summary>
-        /// <param name="requestedZodiacSign">The Zodiac sign that you want more details about.</param>
-        /// <returns>A Zodiac sign object.</returns>
+        /// <param name="requestedZodiacSign">The zodiac sign that you want more details about.</param>
+        /// <returns>A zodiac sign object.</returns>
         public static ZodiacModel GetZodiacSign(ZodiacSigns requestedZodiacSign)
         {
             ZodiacHelper.InitializeAndGetAllZodiacSigns().TryGetValue(requestedZodiacSign, out ZodiacModel zodiacSign);
@@ -58,9 +58,9 @@ namespace Horoscope
         }
 
         /// <summary>
-        /// Gets all Zodiac signs and details for each sign.
+        /// Gets all zodiac signs and details for each sign.
         /// </summary>
-        /// <returns>List of Zodiac signs each as a Zodiac sign object.</returns>
+        /// <returns>List of zodiac signs each as a zodiac sign object.</returns>
         public static List<ZodiacModel> GetAllZodiacSigns()
         {
             return ZodiacHelper.InitializeAndGetAllZodiacSigns().Values.ToList();

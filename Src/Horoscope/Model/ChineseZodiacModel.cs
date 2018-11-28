@@ -10,7 +10,7 @@
         }
 
         /// <summary>
-        /// What this Zodiac sign tells about you.
+        /// What this zodiac sign tells about you.
         /// </summary>
         public string ZodiacPersonality { get; set; }
 
