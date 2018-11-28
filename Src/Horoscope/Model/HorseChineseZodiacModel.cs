@@ -10,7 +10,7 @@
 
         internal static HorseChineseZodiacModel GetHorseModel()
         {
-            return new HorseChineseZodiacModel("zǐ", "Horse", "Horse people are popular, cheerful & quick to compliment others. They can work very hard.");
+            return new HorseChineseZodiacModel("zǐ", ChineseZodiacSigns.Horse.ToString(), "Horse people are popular, cheerful & quick to compliment others. They can work very hard.");
         }
     }
 }

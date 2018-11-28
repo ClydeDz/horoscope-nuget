@@ -10,7 +10,7 @@
 
         internal static RatChineseZodiacModel GetRatModel()
         {
-            return new RatChineseZodiacModel("zǐ", "Rat", "Rat people are very popular. They like to invent things and are good artists.");
+            return new RatChineseZodiacModel("zǐ", ChineseZodiacSigns.Rat.ToString(), "Rat people are very popular. They like to invent things and are good artists.");
         }
     }
 }

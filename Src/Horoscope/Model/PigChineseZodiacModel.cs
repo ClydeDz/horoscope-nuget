@@ -10,7 +10,7 @@
 
         internal static PigChineseZodiacModel GetPigModel()
         {
-            return new PigChineseZodiacModel("hài", "Pig", "Pig	people are very good students. They are honest & brave.They always finish a project or assignment.");
+            return new PigChineseZodiacModel("hài", ChineseZodiacSigns.Pig.ToString(), "Pig people are very good students. They are honest & brave.They always finish a project or assignment.");
         }
     }
 }

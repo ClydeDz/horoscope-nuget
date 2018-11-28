@@ -10,7 +10,7 @@
 
         internal static DragonChineseZodiacModel GetDragonModel()
         {
-            return new DragonChineseZodiacModel("chén", "Dragon", "Dragon people have good health & lots of energy. They are good friends because they listen well.");
+            return new DragonChineseZodiacModel("chén", ChineseZodiacSigns.Dragon.ToString(), "Dragon people have good health & lots of energy. They are good friends because they listen well.");
         }
     }
 }

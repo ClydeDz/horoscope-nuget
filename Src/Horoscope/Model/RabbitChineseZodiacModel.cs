@@ -10,7 +10,7 @@
 
         internal static RabbitChineseZodiacModel GetRabbitModel()
         {
-            return new RabbitChineseZodiacModel("mǎo", "Rabbit", "Rabbit people are nice to be around. They like to talk and many people trust them.");
+            return new RabbitChineseZodiacModel("mǎo", ChineseZodiacSigns.Rabbit.ToString(), "Rabbit people are nice to be around. They like to talk and many people trust them.");
         }
     }
 }
