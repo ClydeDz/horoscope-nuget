@@ -10,7 +10,7 @@
 
         internal static VirgoZodiacModel GetVirgoModel()
         {
-            return new VirgoZodiacModel("Virgo", "The Virgin", new ZodiacDateModel(23, 8), new ZodiacDateModel(22, 9));
+            return new VirgoZodiacModel(ZodiacSigns.Virgo.ToString(), "The Virgin", new ZodiacDateModel(23, 8), new ZodiacDateModel(22, 9));
         }
     }
 }

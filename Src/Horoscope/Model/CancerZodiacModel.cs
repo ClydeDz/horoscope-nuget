@@ -10,7 +10,7 @@
 
         internal static CancerZodiacModel GetCancerModel()
         {
-            return new CancerZodiacModel("Cancer", "The Crab", new ZodiacDateModel(21, 6), new ZodiacDateModel(22, 7));
+            return new CancerZodiacModel(ZodiacSigns.Cancer.ToString(), "The Crab", new ZodiacDateModel(21, 6), new ZodiacDateModel(22, 7));
         }
     }
 }

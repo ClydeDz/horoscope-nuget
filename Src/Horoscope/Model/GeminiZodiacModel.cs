@@ -10,7 +10,7 @@
 
         internal static GeminiZodiacModel GetGeminiModel()
         {
-            return new GeminiZodiacModel("Gemini", "The Twins", new ZodiacDateModel(21, 5), new ZodiacDateModel(20, 6));
+            return new GeminiZodiacModel(ZodiacSigns.Gemini.ToString(), "The Twins", new ZodiacDateModel(21, 5), new ZodiacDateModel(20, 6));
         }
     }
 }

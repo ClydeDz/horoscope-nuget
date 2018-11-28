@@ -10,7 +10,7 @@
 
         internal static AquariusZodiacModel GetAquariusModel()
         {
-            return new AquariusZodiacModel("Aquarius", "The Water-Bearer", new ZodiacDateModel(20, 1), new ZodiacDateModel(18, 2));
+            return new AquariusZodiacModel(ZodiacSigns.Aquarius.ToString(), "The Water-Bearer", new ZodiacDateModel(20, 1), new ZodiacDateModel(18, 2));
         }
     }
 }

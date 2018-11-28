@@ -10,7 +10,7 @@
 
         internal static ScorpioZodiacModel GetScorpioModel()
         {
-            return new ScorpioZodiacModel("Scorpio", "The Scorpion", new ZodiacDateModel(23, 10), new ZodiacDateModel(21, 11));
+            return new ScorpioZodiacModel(ZodiacSigns.Scorpio.ToString(), "The Scorpion", new ZodiacDateModel(23, 10), new ZodiacDateModel(21, 11));
         }
     }
 }

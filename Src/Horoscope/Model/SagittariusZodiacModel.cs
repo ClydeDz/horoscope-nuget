@@ -10,7 +10,7 @@
 
         internal static SagittariusZodiacModel GetSagittariusModel()
         {
-            return new SagittariusZodiacModel("Sagittarius", "The Archer", new ZodiacDateModel(22, 11), new ZodiacDateModel(21, 12));
+            return new SagittariusZodiacModel(ZodiacSigns.Sagittarius.ToString(), "The Archer", new ZodiacDateModel(22, 11), new ZodiacDateModel(21, 12));
         }
     }
 }

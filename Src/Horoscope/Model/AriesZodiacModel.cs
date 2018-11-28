@@ -10,7 +10,7 @@
 
         internal static AriesZodiacModel GetAriesModel()
         {
-            return new AriesZodiacModel("Aries", "The Ram", new ZodiacDateModel(21, 3), new ZodiacDateModel(19, 4));
+            return new AriesZodiacModel(ZodiacSigns.Aries.ToString(), "The Ram", new ZodiacDateModel(21, 3), new ZodiacDateModel(19, 4));
         }
     }
 }

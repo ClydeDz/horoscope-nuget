@@ -10,7 +10,7 @@
 
         internal static LeoZodiacModel GetLeoModel()
         {
-            return new LeoZodiacModel("Leo", "The Lion", new ZodiacDateModel(23, 7), new ZodiacDateModel(22, 8));
+            return new LeoZodiacModel(ZodiacSigns.Leo.ToString(), "The Lion", new ZodiacDateModel(23, 7), new ZodiacDateModel(22, 8));
         }
     }
 }

@@ -10,7 +10,7 @@
 
         internal static CapricornZodiacModel GetCapricornModel()
         {
-            return new CapricornZodiacModel("Capricorn", "The Goat", new ZodiacDateModel(22, 12), new ZodiacDateModel(19, 1));
+            return new CapricornZodiacModel(ZodiacSigns.Capricorn.ToString(), "The Goat", new ZodiacDateModel(22, 12), new ZodiacDateModel(19, 1));
         }
     }
 }

@@ -10,7 +10,7 @@
 
         internal static TaurusZodiacModel GetTaurusModel()
         {
-            return new TaurusZodiacModel("Taurus", "The Bull", new ZodiacDateModel(20, 4), new ZodiacDateModel(20, 5));
+            return new TaurusZodiacModel(ZodiacSigns.Taurus.ToString(), "The Bull", new ZodiacDateModel(20, 4), new ZodiacDateModel(20, 5));
         }
     }
 }

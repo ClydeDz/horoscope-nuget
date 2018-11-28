@@ -10,7 +10,7 @@
 
         internal static LibraZodiacModel GetLibraModel()
         {
-            return new LibraZodiacModel("Libra", "The Scales", new ZodiacDateModel(23, 9), new ZodiacDateModel(22, 10));
+            return new LibraZodiacModel(ZodiacSigns.Libra.ToString(), "The Scales", new ZodiacDateModel(23, 9), new ZodiacDateModel(22, 10));
         }
     }
 }

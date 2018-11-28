@@ -10,7 +10,7 @@
 
         internal static PiscesZodiacModel GetPiscesModel()
         {
-            return new PiscesZodiacModel("Pisces", "The Fish", new ZodiacDateModel(19, 2), new ZodiacDateModel(20, 3));
+            return new PiscesZodiacModel(ZodiacSigns.Pisces.ToString(), "The Fish", new ZodiacDateModel(19, 2), new ZodiacDateModel(20, 3));
         }
     }
 }
