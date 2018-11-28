@@ -2,15 +2,15 @@
 {
     internal class MonkeyChineseZodiacModel: ChineseZodiacModel
     {
-        internal MonkeyChineseZodiacModel(string name, string english, string personality)
-                 : base(name, english, personality)
+        internal MonkeyChineseZodiacModel(string name, string english, string personality, ChineseZodiacElements chineseZodiacFixedElement)
+                 : base(name, english, personality, chineseZodiacFixedElement)
         {
 
         }
 
         internal static MonkeyChineseZodiacModel GetMonkeyModel()
         {
-            return new MonkeyChineseZodiacModel("shēn", ChineseZodiacSigns.Monkey.ToString(), "Monkey people are very funny. They can always make others laugh & are good problem solvers.");
+            return new MonkeyChineseZodiacModel("shēn", ChineseZodiacSigns.Monkey.ToString(), "Monkey people are very funny. They can always make others laugh & are good problem solvers.", ChineseZodiacElements.Metal);
         }
     }
 }

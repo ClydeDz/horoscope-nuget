@@ -2,15 +2,15 @@
 {
     internal class RoosterChineseZodiacModel: ChineseZodiacModel
     {
-        internal RoosterChineseZodiacModel(string name, string english, string personality)
-                  : base(name, english, personality)
+        internal RoosterChineseZodiacModel(string name, string english, string personality, ChineseZodiacElements chineseZodiacFixedElement)
+                  : base(name, english, personality, chineseZodiacFixedElement)
         {
 
         }
 
         internal static RoosterChineseZodiacModel GetRoosterModel()
         {
-            return new RoosterChineseZodiacModel("yǒu", ChineseZodiacSigns.Rooster.ToString(), "Rooster people are hardworkers. They have many talents & think deep thoughts.");
+            return new RoosterChineseZodiacModel("yǒu", ChineseZodiacSigns.Rooster.ToString(), "Rooster people are hardworkers. They have many talents & think deep thoughts.", ChineseZodiacElements.Metal);
         }
     }
 }

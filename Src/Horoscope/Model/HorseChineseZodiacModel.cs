@@ -2,15 +2,15 @@
 {
     internal class HorseChineseZodiacModel: ChineseZodiacModel
     {
-        internal HorseChineseZodiacModel(string name, string english, string personality)
-                 : base(name, english, personality)
+        internal HorseChineseZodiacModel(string name, string english, string personality, ChineseZodiacElements chineseZodiacFixedElement)
+                 : base(name, english, personality, chineseZodiacFixedElement)
         {
 
         }
 
         internal static HorseChineseZodiacModel GetHorseModel()
         {
-            return new HorseChineseZodiacModel("zǐ", ChineseZodiacSigns.Horse.ToString(), "Horse people are popular, cheerful & quick to compliment others. They can work very hard.");
+            return new HorseChineseZodiacModel("zǐ", ChineseZodiacSigns.Horse.ToString(), "Horse people are popular, cheerful & quick to compliment others. They can work very hard.", ChineseZodiacElements.Fire);
         }
     }
 }
