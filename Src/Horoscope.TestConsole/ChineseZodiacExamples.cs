@@ -26,7 +26,7 @@ namespace Horoscope.TestConsole
             Console.WriteLine($"\nChinese zodiac element for 2018 is {zodiacSignFor2018.ToString()}");
 
             var zodiacSignForDate = ChineseZodiac.GetZodiacSignForDate(new DateTime(1966, 2, 12));
-            Console.WriteLine($"\nChinese zodiac sign for {new DateTime(1966, 2, 12).ToShortDateString()} is {zodiacSignForDate.ZodiacName}");
+            Console.WriteLine($"\nChinese zodiac sign for {new DateTime(1966, 2, 12).ToShortDateString()} is {zodiacSignForDate.ZodiacEnglishTranslation}");
 
             var allChineseZodiacSigns = ChineseZodiac.GetAllZodiacSigns();
             Console.WriteLine($"\nGet a list of all Chinese zodiac signs");
