@@ -79,5 +79,31 @@ namespace Horoscope.Tests
             var actualZodiacElement = ChineseZodiac.GetChineseZodiacElementBasedOnYear(year);
             Assert.Equal(expectedZodiacElement, actualZodiacElement);
         }
+
+        [Theory]
+        [InlineData(ChineseZodiacSigns.Rat)]
+        [InlineData(ChineseZodiacSigns.Tiger)]
+        [InlineData(ChineseZodiacSigns.Dragon)]
+        [InlineData(ChineseZodiacSigns.Horse)]
+        [InlineData(ChineseZodiacSigns.Monkey)]
+        [InlineData(ChineseZodiacSigns.Dog)]
+        public void GetZodiacSign_YinYang_Yang_Test(ChineseZodiacSigns chineseZodiacSigns)
+        {
+            var symbols = ChineseZodiac.GetZodiacSign(chineseZodiacSigns);
+            Assert.Equal(YinYang.Yang, symbols.ZodiacYinYang);
+        }
+
+        [Theory]
+        [InlineData(ChineseZodiacSigns.Ox)]
+        [InlineData(ChineseZodiacSigns.Rabbit)]
+        [InlineData(ChineseZodiacSigns.Snake)]
+        [InlineData(ChineseZodiacSigns.Goat)]
+        [InlineData(ChineseZodiacSigns.Rooster)]
+        [InlineData(ChineseZodiacSigns.Pig)]
+        public void GetZodiacSign_YinYang_Yin_Test(ChineseZodiacSigns chineseZodiacSigns)
+        {
+            var symbols = ChineseZodiac.GetZodiacSign(chineseZodiacSigns);
+            Assert.Equal(YinYang.Yin, symbols.ZodiacYinYang);
+        }
     }
 }
