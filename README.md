@@ -1,26 +1,33 @@
 # Horoscope NuGet
-A .NET library for Zodiac signs. Get details on each Zodiac sign, pass a date and know which Zodiac sign it falls in or get a list of all Zodiac signs. Currently in beta.
+A .NET library for Zodiac signs. Get details on each Zodiac sign, pass a date and know which Zodiac sign it falls in or get a list of all Zodiac signs.
 
 [![NuGet](https://img.shields.io/nuget/v/Horoscope.svg)](https://www.nuget.org/packages/Horoscope/)
 
      
-## Usage
-Install using package manager.
+## How to use
+#### Installation 
+Library can be installed with [Nuget](https://www.nuget.org/packages/Horoscope/).
+```PowerShell
+PM> Install-Package Horoscope 
 ```
-Install-Package Horoscope -Version 0.0.2
-```
-
+#### Usage
 Include the namespace in your program.
-```
+```C#
 using Horoscope;
 ```
 
 Then go ahead and consume it.
-```
+```C#
 var zodiacSign = Zodiac.GetZodiacSignForDate(new DateTime(1950, 2, 12));
 ```
-    
 
+#### More examples
+[Horoscope.Zodiac](https://github.com/ClydeDz/horoscope-nuget/blob/master/Src/Horoscope.TestConsole/ZodiacExamples.cs)   
+[Horoscope.ChineseZodiac](https://github.com/ClydeDz/horoscope-nuget/blob/master/Src/Horoscope.TestConsole/ChineseZodiacExamples.cs)
+   
+
+## Release notes
+Find release notes [here](https://github.com/ClydeDz/horoscope-nuget/wiki#release-notes).
 
 ## Credits
 (c) 2018 [Clyde D'Souza](https://clydedsouza.net)   
