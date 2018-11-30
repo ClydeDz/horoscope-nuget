@@ -28,16 +28,16 @@ namespace Horoscope.Tests
         public void GetZodiacSign_Dog_Test()
         {
             var symbols = ChineseZodiac.GetZodiacSign(ChineseZodiacSigns.Dog);
-            Assert.Equal("xū", symbols.ZodiacName);
+            Assert.Equal("gòu", symbols.ZodiacName);
             Assert.Equal("Dog", symbols.ZodiacEnglishTranslation);
             Assert.Equal("Dog people are loyal & can always keep a secret. Sometimes they worry too much.", symbols.ZodiacPersonality);
         }
 
         [Fact]
-        public void GetZodiacSign_Capricorn_Test()
+        public void GetZodiacSign_Monkey_Test()
         {
             var symbols = ChineseZodiac.GetZodiacSign(ChineseZodiacSigns.Monkey);
-            Assert.Equal("shēn", symbols.ZodiacName);
+            Assert.Equal("hóu", symbols.ZodiacName);
             Assert.Equal("Monkey", symbols.ZodiacEnglishTranslation);
             Assert.Equal("Monkey people are very funny. They can always make others laugh & are good problem solvers.", symbols.ZodiacPersonality);
         }
