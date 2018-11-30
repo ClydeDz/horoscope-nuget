@@ -1,6 +1,6 @@
 # Horoscope NuGet
-A .NET library for Zodiac signs. Get details on each Zodiac sign, pass a date and know which Zodiac sign it falls in or get a list of all Zodiac signs.
-
+A .NET library for zodiac signs. Get details on each zodiac sign, pass a date and know which zodiac sign it falls in or get a list of all zodiac signs. Now includes Chinese zodiac signs and elements! 
+    
 [![NuGet](https://img.shields.io/nuget/v/Horoscope.svg)](https://www.nuget.org/packages/Horoscope/)
 
      
