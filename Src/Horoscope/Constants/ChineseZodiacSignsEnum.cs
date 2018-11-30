@@ -30,4 +30,13 @@
         Metal,
         Water
     }
+
+    /// <summary>
+    /// Yin-Yang elements.
+    /// </summary>
+    public enum YinYang
+    {
+        Yin,
+        Yang
+    }
 }

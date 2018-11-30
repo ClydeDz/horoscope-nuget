@@ -2,11 +2,12 @@
 {
     public class ChineseZodiacModel: BaseZodiacModel
     {
-        internal ChineseZodiacModel(string name, string english, string zodiacPersonality, ChineseZodiacElements chineseZodiacFixedElement)
+        internal ChineseZodiacModel(string name, string english, string zodiacPersonality, ChineseZodiacElements chineseZodiacFixedElement, YinYang yinYang)
             :base(name, english)
         {
             ZodiacPersonality = zodiacPersonality;
             ZodiacFixedElement = chineseZodiacFixedElement;
+            ZodiacYinYang = yinYang;
         }
 
         /// <summary>
@@ -15,5 +16,7 @@
         public string ZodiacPersonality { get; set; }
 
         public ChineseZodiacElements ZodiacFixedElement { get; set; }
+
+        public YinYang ZodiacYinYang { get; set; }
     }
 }
