@@ -6,20 +6,14 @@ namespace Horoscope.TestConsole
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(DateTime.Today.Month);
-            
-            var symbol = Zodiac.GetZodiacSignForDate(new DateTime(1966, 2, 12));
-            Console.WriteLine(symbol.ZodiacName +" "+ symbol.ZodiacDuration);
-            
-            symbol = Zodiac.GetZodiacSign(ZodiacSigns.Capricorn);
-            Console.WriteLine(symbol.ZodiacDuration);
+            // Horoscope.Zodiac
+            ZodiacExamples.ShowZodiacBasicExamples();
 
-            var allSymbols = Zodiac.GetAllZodiacSigns();
-            foreach (var sym in allSymbols)
-            {
-                Console.WriteLine(sym.ZodiacName);
-            }
-            Console.Read();
+            // Horoscope.ChineseZodiac
+            ChineseZodiacExamples.ShowZodiacBasicExamples();
+            
+            Console.WriteLine("\nPress any key to exit");
+            Console.ReadLine();
         }
     }
 }

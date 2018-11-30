@@ -1,0 +1,39 @@
+﻿using System;
+
+namespace Horoscope.TestConsole
+{
+    /// <summary>
+    /// Contains example usage scenarios of Horoscope.ChineseZodiac
+    /// </summary>
+    class ChineseZodiacExamples
+    {
+        /// <summary>
+        /// Contains basic example usage scenarios.
+        /// </summary>
+        public static void ShowZodiacBasicExamples()
+        {
+            var allFireChineseSigns = ChineseZodiac.GetAllZodiacSignsForAnElement(ChineseZodiacElements.Fire);
+            Console.WriteLine($"\nGet a list of all Chinese zodiac signs that are associated with {ChineseZodiacElements.Fire.ToString()}");
+            foreach (var currentZodiacSign in allFireChineseSigns)
+            {
+                Console.WriteLine($"-\t{currentZodiacSign.ZodiacEnglishTranslation}");
+            }
+
+            var dragonZodiacSign = ChineseZodiac.GetZodiacSign(ChineseZodiacSigns.Dragon);
+            Console.WriteLine($"\nPersonality trait for {ChineseZodiacSigns.Dragon.ToString()} people: {dragonZodiacSign.ZodiacPersonality}");
+
+            var zodiacSignFor2018 = ChineseZodiac.GetChineseZodiacElementBasedOnYear(2018);
+            Console.WriteLine($"\nChinese zodiac element for 2018 is {zodiacSignFor2018.ToString()}");
+
+            var zodiacSignForDate = ChineseZodiac.GetZodiacSignForDate(new DateTime(1966, 2, 12));
+            Console.WriteLine($"\nChinese zodiac sign for {new DateTime(1966, 2, 12).ToShortDateString()} is {zodiacSignForDate.ZodiacName}");
+
+            var allChineseZodiacSigns = ChineseZodiac.GetAllZodiacSigns();
+            Console.WriteLine($"\nGet a list of all Chinese zodiac signs");
+            foreach (var currentZodiacSign in allChineseZodiacSigns)
+            {
+                Console.WriteLine($"-\t{currentZodiacSign.ZodiacName} - {currentZodiacSign.ZodiacEnglishTranslation}");
+            }
+        }
+    }
+}
