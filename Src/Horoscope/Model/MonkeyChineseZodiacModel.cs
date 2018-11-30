@@ -10,7 +10,7 @@
 
         internal static MonkeyChineseZodiacModel GetMonkeyModel()
         {
-            return new MonkeyChineseZodiacModel("shēn", ChineseZodiacSigns.Monkey.ToString(), "Monkey people are very funny. They can always make others laugh & are good problem solvers.", ChineseZodiacElements.Metal);
+            return new MonkeyChineseZodiacModel("hóu", ChineseZodiacSigns.Monkey.ToString(), "Monkey people are very funny. They can always make others laugh & are good problem solvers.", ChineseZodiacElements.Metal);
         }
     }
 }

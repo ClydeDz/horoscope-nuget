@@ -10,7 +10,7 @@
 
         internal static RoosterChineseZodiacModel GetRoosterModel()
         {
-            return new RoosterChineseZodiacModel("yǒu", ChineseZodiacSigns.Rooster.ToString(), "Rooster people are hardworkers. They have many talents & think deep thoughts.", ChineseZodiacElements.Metal);
+            return new RoosterChineseZodiacModel("xióng jī", ChineseZodiacSigns.Rooster.ToString(), "Rooster people are hardworkers. They have many talents & think deep thoughts.", ChineseZodiacElements.Metal);
         }
     }
 }

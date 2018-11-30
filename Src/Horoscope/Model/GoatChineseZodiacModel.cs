@@ -10,7 +10,7 @@
 
         internal static GoatChineseZodiacModel GetGoatModel()
         {
-            return new GoatChineseZodiacModel("wèi", ChineseZodiacSigns.Goat.ToString(), "Goat people are very good artists. They ask many questions, like nice things & are very wise.", ChineseZodiacElements.Earth);
+            return new GoatChineseZodiacModel("yáng", ChineseZodiacSigns.Goat.ToString(), "Goat people are very good artists. They ask many questions, like nice things & are very wise.", ChineseZodiacElements.Earth);
         }
     }
 }

@@ -10,7 +10,7 @@
 
         internal static OxChineseZodiacModel GetOxModel()
         {
-            return new OxChineseZodiacModel("chǒu", ChineseZodiacSigns.Ox.ToString(), "Ox people are dependable & calm. They are good listeners & have very strong ideas.", ChineseZodiacElements.Earth);
+            return new OxChineseZodiacModel("niú", ChineseZodiacSigns.Ox.ToString(), "Ox people are dependable & calm. They are good listeners & have very strong ideas.", ChineseZodiacElements.Earth);
         }
     }
 }
