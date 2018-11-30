@@ -9,6 +9,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Horoscope.TestConsole", "Ho
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Horoscope.Tests", "Horoscope.Tests\Horoscope.Tests.csproj", "{23BC995E-393A-4E74-B74F-89FB54D2E885}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution items", "Solution items", "{DF07DAC1-0499-4D6D-8B51-36F4A623C99D}"
+	ProjectSection(SolutionItems) = preProject
+		..\Icon.png = ..\Icon.png
+		..\LICENSE = ..\LICENSE
+		..\README.md = ..\README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
