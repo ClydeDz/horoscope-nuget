@@ -34,6 +34,13 @@ namespace Horoscope.TestConsole
             {
                 Console.WriteLine($"-\t{currentZodiacSign.ZodiacName} - {currentZodiacSign.ZodiacEnglishTranslation}");
             }
+
+            var allChineseZodiacSignsYin = ChineseZodiac.GetAllZodiacSignsForYinYang(YinYang.Yin);
+            Console.WriteLine($"\nGet a list of all Chinese zodiac signs associated with {YinYang.Yin}");
+            foreach (var currentZodiacSign in allChineseZodiacSignsYin)
+            {
+                Console.WriteLine($"-\t{currentZodiacSign.ZodiacName} - {currentZodiacSign.ZodiacEnglishTranslation}");
+            }
         }
     }
 }

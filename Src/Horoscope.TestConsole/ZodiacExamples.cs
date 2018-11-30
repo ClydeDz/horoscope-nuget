@@ -13,7 +13,7 @@ namespace Horoscope.TestConsole
         public static void ShowZodiacBasicExamples()
         {
             var zodiacSign = Zodiac.GetZodiacSignForDate(new DateTime(1966, 2, 12));
-            Console.WriteLine($"Zodiac details for {new DateTime(1966, 2, 12).ToShortDateString()}");
+            Console.WriteLine($"\nZodiac details for {new DateTime(1966, 2, 12).ToShortDateString()}");
             Console.WriteLine($"Name: {zodiacSign.ZodiacName} English name: {zodiacSign.ZodiacEnglishTranslation} Duration: {zodiacSign.ZodiacDuration}");
 
             var capriconZodiacSign = Zodiac.GetZodiacSign(ZodiacSigns.Capricorn);
