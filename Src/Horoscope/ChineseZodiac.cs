@@ -88,5 +88,20 @@ namespace Horoscope
                 return ChineseZodiacElements.Earth;
             }
         }
+
+        /// <summary>
+        /// Gets all zodiac signs that are associated with either Yin or Yang.
+        /// This is a fixed yinyang-to-zodiac-sign association.
+        /// </summary>
+        /// <param name="yinOrYang">Supply either Yin or Yang.</param>
+        /// <returns>Returns a list of Chinese zodiac signs that match the YinYang filter.</returns>
+        public static List<ChineseZodiacModel> GetAllZodiacSignsForYinYang(YinYang yinOrYang)
+        {
+            return ChineseZodiacHelper.InitializeAndGetAllZodiacSigns().Values
+                    .Where(z => z.ZodiacYinYang == yinOrYang)
+                    .Select(c => c)
+                    .ToList();
+        }
+
     }
 }

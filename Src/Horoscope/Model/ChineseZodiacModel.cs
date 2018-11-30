@@ -15,8 +15,14 @@
         /// </summary>
         public string ZodiacPersonality { get; set; }
 
+        /// <summary>
+        /// The element associated with this zodiac sign.
+        /// </summary>
         public ChineseZodiacElements ZodiacFixedElement { get; set; }
 
+        /// <summary>
+        /// The YinYang element associated with this zodiac sign.
+        /// </summary>
         public YinYang ZodiacYinYang { get; set; }
     }
 }

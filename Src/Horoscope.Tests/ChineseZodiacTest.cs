@@ -105,5 +105,21 @@ namespace Horoscope.Tests
             var symbols = ChineseZodiac.GetZodiacSign(chineseZodiacSigns);
             Assert.Equal(YinYang.Yin, symbols.ZodiacYinYang);
         }
+
+        [Fact]
+        public void GetAllZodiacSignsForYinYang_Yang_Test()
+        {
+            var symbols = ChineseZodiac.GetAllZodiacSignsForYinYang(YinYang.Yang);
+            var tigerSign = symbols.Where(s => s.ZodiacEnglishTranslation == ChineseZodiacSigns.Tiger.ToString()).FirstOrDefault();
+            Assert.NotNull(tigerSign);
+        }
+
+        [Fact]
+        public void GetAllZodiacSignsForYinYang_Yin_Test()
+        {
+            var symbols = ChineseZodiac.GetAllZodiacSignsForYinYang(YinYang.Yin);
+            var snakeSign = symbols.Where(s => s.ZodiacEnglishTranslation == ChineseZodiacSigns.Snake.ToString()).FirstOrDefault();
+            Assert.NotNull(snakeSign);
+        }
     }
 }
