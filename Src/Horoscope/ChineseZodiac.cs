@@ -7,7 +7,7 @@ using System.Linq;
 namespace Horoscope
 {
     /// <summary>
-    /// Contains all methods pertaining to Chinese zodiac signs.
+    /// Contains all public methods pertaining to Chinese zodiac signs.
     /// </summary>
     public class ChineseZodiac
     {
