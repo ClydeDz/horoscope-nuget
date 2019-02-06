@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Horoscope</id>
+    <version>0.0.4</version>
+    <title>Horoscope</title>
+    <authors>Clyde D'Souza</authors>
+    <owners>Clyde D'Souza</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+	  <projectUrl>https://github.com/ClydeDz/horoscope-nuget/wiki</projectUrl>
+    <repository url="https://github.com/ClydeDz/horoscope-nuget" />
+    <iconUrl>https://raw.githubusercontent.com/ClydeDz/horoscope-nuget/master/Icon.png</iconUrl>
+    <description>A .NET library for zodiac signs. Get details on each zodiac sign, pass a date and know which zodiac sign it falls in or get a list of all zodiac signs. Now includes Chinese zodiac signs and elements!</description>
+    <summary>A .NET library for zodiac signs. Get details on each zodiac sign, pass a date and know which zodiac sign it falls in or get a list of all zodiac signs.</summary>
+    <releaseNotes>Now includes Chinese zodiac signs, fixed elements (i.e., wood, fire, earth, metal, water) and yin yang associated with each Chinese zodiac sign. 
+
+More release notes here: https://github.com/ClydeDz/horoscope-nuget/wiki#release-notes </releaseNotes>
+    <copyright>Copyright (c) 2018 Clyde D'Souza</copyright>
+    <tags>horoscope zodiac development library zodiac-signs chinese-zodiac chinese-horoscope yinyang chinese-elements yin-yang</tags>
+   <dependencies>
+      <group targetFramework=".NETStandard2.0" />
+    </dependencies>
+  </metadata>
+</package>
