@@ -30,4 +30,8 @@ More release notes here: https://github.com/ClydeDz/horoscope-nuget/wiki#release
     <OutputPath>bin\Debug\lib\</OutputPath>
   </PropertyGroup>
 
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="copy /Y  &quot;$(SolutionDir)Horoscope.nuspec&quot; &quot;$(ProjectDir)bin\$(ConfigurationName)\Horoscope.nuspec&quot;&#xD;&#xA;copy /Y  &quot;$(SolutionDir)LICENSE.md&quot; &quot;$(ProjectDir)bin\$(ConfigurationName)\LICENSE.md&quot;" />
+  </Target>
+
 </Project>
