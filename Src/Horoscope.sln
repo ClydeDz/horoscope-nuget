@@ -11,8 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Horoscope.Tests", "Horoscop
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution items", "Solution items", "{DF07DAC1-0499-4D6D-8B51-36F4A623C99D}"
 	ProjectSection(SolutionItems) = preProject
+		Horoscope.nuspec = Horoscope.nuspec
 		..\Icon.png = ..\Icon.png
 		..\LICENSE = ..\LICENSE
+		LICENSE.md = LICENSE.md
 		..\README.md = ..\README.md
 	EndProjectSection
 EndProject

@@ -19,6 +19,7 @@ More release notes here: https://github.com/ClydeDz/horoscope-nuget/wiki#release
     <AssemblyVersion>0.0.0.3</AssemblyVersion>
     <FileVersion>0.0.0.3</FileVersion>
     <PackageIconUrl>https://raw.githubusercontent.com/ClydeDz/horoscope-nuget/master/Icon.png</PackageIconUrl>
+    <Product>Horoscope</Product>
   </PropertyGroup>
 
 </Project>
