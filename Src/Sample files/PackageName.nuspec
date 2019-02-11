@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Basic .nuspec file with ideal metadata elements.
+Replace comments in brackets () with actual values. Also remove this comment block.
+-->
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>(Unique ID for the package)</id>
+    <version>(Semantic versioning for the package. Usually of format Major.Minor.Patch)</version>
+    <title>(Name of the package)</title>
+    <authors>(Author name)</authors>
+    <owners>(Owners name. Comma separated list if multiple owners)</owners>
+    <requireLicenseAcceptance>(true if you require user to accept license)</requireLicenseAcceptance>
+    <license type="expression">(SPDX license identifier)</license>
+	  <projectUrl>(Project website)</projectUrl>
+    <repository url="(Public URL to the code repository. Remove this line if none exists)" />
+    <iconUrl>(Icon URL for this package. Must be publicly accessible)</iconUrl>
+    <description>(Description for this NuGet package)</description>
+    <summary>(A short version of the description)</summary>
+    <releaseNotes>(Enter release notes here)</releaseNotes>
+    <copyright>(Copyright (c) Year Author name)</copyright>
+    <tags>(Space delimited tags)</tags>
+   <dependencies>
+      <group targetFramework="(.NETStandard2.0 if this is a .NET standard library)" />
+    </dependencies>
+  </metadata>
+</package>
