@@ -46,8 +46,8 @@ namespace Horoscope.Tests
         public void GetAllZodiacSignsForAnElement_Fire_Test()
         {
             var symbols = ChineseZodiac.GetAllZodiacSignsForAnElement(ChineseZodiacElements.Fire);
-            var snakeAnimal = symbols.Where(s => s.ZodiacEnglishTranslation == ChineseZodiacSigns.Snake.ToString()).FirstOrDefault();
-            var horseAnimal = symbols.Where(s => s.ZodiacEnglishTranslation == ChineseZodiacSigns.Horse.ToString()).FirstOrDefault();
+            var snakeAnimal = symbols.FirstOrDefault(s => s.ZodiacEnglishTranslation == ChineseZodiacSigns.Snake.ToString());
+            var horseAnimal = symbols.FirstOrDefault(s => s.ZodiacEnglishTranslation == ChineseZodiacSigns.Horse.ToString());
             Assert.Equal(2, symbols.Count);
             Assert.NotNull(snakeAnimal);
             Assert.NotNull(horseAnimal);
@@ -57,10 +57,10 @@ namespace Horoscope.Tests
         public void GetAllZodiacSignsForAnElement_Earth_Test()
         {
             var symbols = ChineseZodiac.GetAllZodiacSignsForAnElement(ChineseZodiacElements.Earth);
-            var oxAnimal = symbols.Where(s => s.ZodiacEnglishTranslation == ChineseZodiacSigns.Ox.ToString()).FirstOrDefault();
-            var dragonAnimal = symbols.Where(s => s.ZodiacEnglishTranslation == ChineseZodiacSigns.Dragon.ToString()).FirstOrDefault();
-            var goatAnimal = symbols.Where(s => s.ZodiacEnglishTranslation == ChineseZodiacSigns.Goat.ToString()).FirstOrDefault();
-            var dogAnimal = symbols.Where(s => s.ZodiacEnglishTranslation == ChineseZodiacSigns.Dog.ToString()).FirstOrDefault();
+            var oxAnimal = symbols.FirstOrDefault(s => s.ZodiacEnglishTranslation == ChineseZodiacSigns.Ox.ToString());
+            var dragonAnimal = symbols.FirstOrDefault(s => s.ZodiacEnglishTranslation == ChineseZodiacSigns.Dragon.ToString());
+            var goatAnimal = symbols.FirstOrDefault(s => s.ZodiacEnglishTranslation == ChineseZodiacSigns.Goat.ToString());
+            var dogAnimal = symbols.FirstOrDefault(s => s.ZodiacEnglishTranslation == ChineseZodiacSigns.Dog.ToString());
             Assert.Equal(4, symbols.Count);
             Assert.NotNull(oxAnimal);
             Assert.NotNull(dragonAnimal);
@@ -110,7 +110,7 @@ namespace Horoscope.Tests
         public void GetAllZodiacSignsForYinYang_Yang_Test()
         {
             var symbols = ChineseZodiac.GetAllZodiacSignsForYinYang(YinYang.Yang);
-            var tigerSign = symbols.Where(s => s.ZodiacEnglishTranslation == ChineseZodiacSigns.Tiger.ToString()).FirstOrDefault();
+            var tigerSign = symbols.FirstOrDefault(s => s.ZodiacEnglishTranslation == ChineseZodiacSigns.Tiger.ToString());
             Assert.NotNull(tigerSign);
         }
 
@@ -118,7 +118,7 @@ namespace Horoscope.Tests
         public void GetAllZodiacSignsForYinYang_Yin_Test()
         {
             var symbols = ChineseZodiac.GetAllZodiacSignsForYinYang(YinYang.Yin);
-            var snakeSign = symbols.Where(s => s.ZodiacEnglishTranslation == ChineseZodiacSigns.Snake.ToString()).FirstOrDefault();
+            var snakeSign = symbols.FirstOrDefault(s => s.ZodiacEnglishTranslation == ChineseZodiacSigns.Snake.ToString());
             Assert.NotNull(snakeSign);
         }
     }

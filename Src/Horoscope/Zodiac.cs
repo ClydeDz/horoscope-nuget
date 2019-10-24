@@ -19,11 +19,9 @@ namespace Horoscope
         public static ZodiacModel GetZodiacSignForDate(DateTime requestedDateTime)
         {
             var zodiacSymbol = ZodiacHelper.InitializeAndGetAllZodiacSigns().Values
-                .Where(d => 
-                    (d.ZodiacStartDate.Month == requestedDateTime.Month && requestedDateTime.Day >= d.ZodiacStartDate.Date) 
-                    || (d.ZodiacEndDate.Month == requestedDateTime.Month && requestedDateTime.Day <= d.ZodiacEndDate.Date))                
-                .Select(s => s)
-                .FirstOrDefault();
+                .FirstOrDefault(z => 
+                    (z.ZodiacStartDate.Month == requestedDateTime.Month && requestedDateTime.Day >= z.ZodiacStartDate.Date) 
+                    || (z.ZodiacEndDate.Month == requestedDateTime.Month && requestedDateTime.Day <= z.ZodiacEndDate.Date));
             return zodiacSymbol;
         }
 
