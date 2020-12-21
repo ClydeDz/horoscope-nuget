@@ -8,6 +8,7 @@
 - [ ] Breaking change (fix or feature that would cause existing functionality to change)
 - [ ] I have read the `CONTRIBUTING` document.
 - [ ] My code follows the code style of this project.
+- [ ] My change requires to update the console app that outlines how to use the NuGet package.
 - [ ] My change requires a change to the documentation in the `README` file.
 - [ ] I have updated the documentation in the `README` file accordingly.
 - [ ] I have updated the version number in the [`Horoscope.nuspec`](https://github.com/ClydeDz/horoscope-nuget/blob/master/Src/Horoscope.nuspec) file using the [SemVer](https://semver.org/) format.
