@@ -3,8 +3,8 @@ A .NET library for zodiac signs. Get details on each zodiac sign, pass a date an
     
 [![NuGet](https://img.shields.io/nuget/v/horoscope.svg?colorB=green&label=NuGet&logo=nuget&style=flat)](https://www.nuget.org/packages/Horoscope/)
 [![NuGet Downloads](https://img.shields.io/nuget/dt/horoscope.svg?colorB=%23004880&label=NuGet%20Downloads&logo=nuget&style=flat)](https://www.nuget.org/packages/Horoscope/)
-[![Build status](https://dev.azure.com/horoscope-nuget/Horoscope%20NuGet/_apis/build/status/Master%20branch%20build)](https://dev.azure.com/horoscope-nuget/Horoscope%20NuGet/_build/latest?definitionId=1)
-[![Test status](https://img.shields.io/azure-devops/tests/horoscope-nuget/Horoscope%20NuGet/1/master.svg?label=Tests&logo=Azure%20DevOps&style=flat)](https://dev.azure.com/horoscope-nuget/Horoscope%20NuGet/_build/latest?definitionId=1)
+[![Azure DevOps builds](https://img.shields.io/azure-devops/build/clydedsouza-nuget/90af4830-1be2-4677-981d-15d0b01937e4/1?logo=Azure%20DevOps)](https://dev.azure.com/clydedsouza-nuget/Horoscope%20NuGet/_build) 
+[![Azure DevOps tests](https://img.shields.io/azure-devops/tests/clydedsouza-nuget/Horoscope%2520NuGet/1?logo=Azure%20DevOps)](https://dev.azure.com/clydedsouza-nuget/Horoscope%20NuGet/_build)     
 
 ## How to use
 #### Installation 
@@ -32,7 +32,7 @@ var zodiacSign = Zodiac.GetZodiacSignForDate(new DateTime(1950, 2, 12));
    
 
 ## Release notes
-Find release notes [here](https://github.com/ClydeDz/horoscope-nuget/wiki#release-notes).
+Find release notes [here](https://github.com/ClydeDz/horoscope-nuget/releases).
 
 ## Credits
 (c) 2018 [Clyde D'Souza](https://clydedsouza.net)   
