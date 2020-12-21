@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
     <id>Horoscope</id>
-    <version>0.9.0</version>
+    <version>1.0.0</version>
     <title>Horoscope</title>
     <authors>Clyde D'Souza</authors>
     <owners>Clyde D'Souza</owners>
@@ -13,9 +13,7 @@
     <iconUrl>https://raw.githubusercontent.com/ClydeDz/horoscope-nuget/master/Icon.png</iconUrl>
     <description>A .NET library for zodiac signs. Get details on each zodiac sign, pass a date and know which zodiac sign it falls in or get a list of all zodiac signs. Now includes Chinese zodiac signs and elements!</description>
     <summary>A .NET library for zodiac signs. Get details on each zodiac sign, pass a date and know which zodiac sign it falls in or get a list of all zodiac signs.</summary>
-    <releaseNotes>Add contributing guidelines and a pull request template to the GitHub repository.
-    
-    More release notes here: https://github.com/ClydeDz/horoscope-nuget/releases </releaseNotes>
+    <releaseNotes>Add contributing guidelines and a pull request template to the GitHub repository. More release notes here: https://github.com/ClydeDz/horoscope-nuget/releases </releaseNotes>
     <copyright>Copyright (c) 2018 Clyde D'Souza</copyright>
     <tags>horoscope zodiac development library zodiac-signs chinese-zodiac chinese-horoscope yinyang chinese-elements yin-yang</tags>
    <dependencies>
