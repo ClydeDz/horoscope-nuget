@@ -12,6 +12,7 @@
 - [ ] My change requires a change to the documentation in the `README` file.
 - [ ] I have updated the documentation in the `README` file accordingly.
 - [ ] I have updated the version number in the [`Horoscope.nuspec`](https://github.com/ClydeDz/horoscope-nuget/blob/master/Src/Horoscope.nuspec) file using the [SemVer](https://semver.org/) format.
+- [ ] I have added `<summary>` comments to all publicly accessible methods, classes, etc.
 - [ ] I have added tests to cover my changes.
 - [ ] All new and existing tests passed.
 

@@ -1,5 +1,8 @@
 ﻿namespace Horoscope.Model
 {
+    /// <summary>
+    /// Base Zodiac sign object containing information common to all Zodiac signs.
+    /// </summary>
     public class BaseZodiacModel
     {
         internal BaseZodiacModel(string zodiacName, string zodiacEnglishTranslation)
