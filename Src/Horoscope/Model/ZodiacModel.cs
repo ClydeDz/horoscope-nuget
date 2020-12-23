@@ -1,7 +1,7 @@
 ﻿namespace Horoscope.Model
 {
     /// <summary>
-    /// The Zodiac sign object containing information on each Zodiac sign.
+    /// The zodiac sign object containing information on each zodiac sign.
     /// </summary>
     public class ZodiacModel: BaseZodiacModel
     {
@@ -13,7 +13,7 @@
         }
 
         /// <summary>
-        /// The duration for this Zodiac sign.
+        /// The duration for this zodiac sign.
         /// Example: December 22 to January 19.
         /// </summary>
         public string ZodiacDuration { get { return $"{ToMonth(ZodiacStartDate.Month)} {ZodiacStartDate.Date} to {ToMonth(ZodiacEndDate.Month)} {ZodiacEndDate.Date}"; } }

@@ -37,7 +37,7 @@ namespace Horoscope
         /// <summary>
         /// Gets all zodiac signs and details for each sign.
         /// </summary>
-        /// <returns>List of zodiac signs each as a Zodiac sign object.</returns>
+        /// <returns>List of zodiac signs each as a zodiac sign object.</returns>
         public static List<ChineseZodiacModel> GetAllZodiacSigns()
         {
             return ChineseZodiacHelper.InitializeAndGetAllZodiacSigns().Values.ToList();
