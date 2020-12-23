@@ -5,7 +5,7 @@
     <Authors>Clyde D'Souza</Authors>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <PackageId>Horoscope</PackageId>
-    <Version>0.9.1</Version>
+    <Version>0.9.2</Version>
     <Company />
     <PackageLicenseUrl></PackageLicenseUrl>
     <RepositoryUrl>https://github.com/ClydeDz/horoscope-nuget</RepositoryUrl>
@@ -14,12 +14,13 @@
     <Description>A .NET library for zodiac signs. Get details on each zodiac sign, pass a date and know which zodiac sign it falls in or get a list of all zodiac signs. Now includes Chinese zodiac signs and elements!</Description>
     <Copyright>Copyright (c) 2018 Clyde D'Souza</Copyright>
     <PackageReleaseNotes>Now includes Chinese zodiac signs, fixed elements (i.e., wood, fire, earth, metal, water) and yin yang associated with each Chinese zodiac sign. More release notes here: https://github.com/ClydeDz/horoscope-nuget/releases</PackageReleaseNotes>
-    <AssemblyVersion>0.9.1.0</AssemblyVersion>
-    <FileVersion>0.9.1.0</FileVersion>
-    <PackageIconUrl>https://raw.githubusercontent.com/ClydeDz/horoscope-nuget/master/Icon.png</PackageIconUrl>
+    <AssemblyVersion>0.9.2.0</AssemblyVersion>
+    <FileVersion>0.9.2.0</FileVersion>
+    <PackageIconUrl></PackageIconUrl>
     <Product>Horoscope</Product>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageIcon>Icon.png</PackageIcon>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
@@ -29,6 +30,13 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <OutputPath>bin\Debug\lib\</OutputPath>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\Icon.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
     <Exec Command="copy /Y  &quot;$(SolutionDir)Horoscope.nuspec&quot; &quot;$(ProjectDir)bin\$(ConfigurationName)\Horoscope.nuspec&quot;&#xD;&#xA;copy /Y  &quot;$(SolutionDir)LICENSE.md&quot; &quot;$(ProjectDir)bin\$(ConfigurationName)\LICENSE.md&quot;" />

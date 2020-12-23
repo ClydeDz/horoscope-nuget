@@ -10,6 +10,7 @@
     <license type="expression">MIT</license>
     <projectUrl>https://github.com/ClydeDz/horoscope-nuget</projectUrl>
     <repository url="https://github.com/ClydeDz/horoscope-nuget" />
+    <icon>Icon.jpg</icon>
     <iconUrl>https://raw.githubusercontent.com/ClydeDz/horoscope-nuget/master/Icon.png</iconUrl>
     <description>A .NET library for zodiac signs. Get details on each zodiac sign, pass a date and know which zodiac sign it falls in or get a list of all zodiac signs. Now includes Chinese zodiac signs and elements!</description>
     <summary>A .NET library for zodiac signs. Get details on each zodiac sign, pass a date and know which zodiac sign it falls in or get a list of all zodiac signs.</summary>
@@ -20,4 +21,7 @@
       <group targetFramework=".NETStandard2.0" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="..\icon.png" target="" />
+  </files>
 </package>
