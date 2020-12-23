@@ -1,5 +1,8 @@
 ﻿namespace Horoscope.Model
 {
+    /// <summary>
+    /// The Chinese zodiac sign object containing information on each Chinese zodiac sign.
+    /// </summary>
     public class ChineseZodiacModel: BaseZodiacModel
     {
         internal ChineseZodiacModel(string name, string english, string zodiacPersonality, ChineseZodiacElements chineseZodiacFixedElement, YinYang yinYang)

@@ -1,7 +1,7 @@
 ﻿namespace Horoscope.Model
 {
     /// <summary>
-    /// Base Zodiac sign object containing information common to all Zodiac signs.
+    /// Base zodiac sign object containing information common to all zodiac signs.
     /// </summary>
     public class BaseZodiacModel
     {
