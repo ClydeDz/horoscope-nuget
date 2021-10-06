@@ -55,6 +55,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DateTimeExtensionsTest.cs" />
     <Compile Include="Helpers\ChineseZodiacHelperTest.cs" />
     <Compile Include="Helpers\ZodiacHelperTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
