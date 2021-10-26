@@ -28,6 +28,11 @@ namespace Horoscope.TestConsole
             var zodiacSignForDate = ChineseZodiac.GetZodiacSignForDate(new DateTime(1966, 2, 12));
             Console.WriteLine($"\nChinese zodiac sign for {new DateTime(1966, 2, 12).ToShortDateString()} is {zodiacSignForDate.ZodiacEnglishTranslation}");
 
+            // Another option would be:
+            var givenDate = new DateTime(1995, 8, 26);
+            var anotherZodiacSign = givenDate.GetChineseZodiacSign();
+            Console.WriteLine($"\nChinese zodiac sign for {givenDate.ToShortDateString()} is {anotherZodiacSign.ZodiacEnglishTranslation}");
+
             var allChineseZodiacSigns = ChineseZodiac.GetAllZodiacSigns();
             Console.WriteLine($"\nGet a list of all Chinese zodiac signs");
             foreach (var currentZodiacSign in allChineseZodiacSigns)
