@@ -26,6 +26,12 @@ Then go ahead and consume it.
 var zodiacSign = Zodiac.GetZodiacSignForDate(new DateTime(1950, 2, 12));
 ```
 
+Another simpler option if all you need is the zodiac sign for a single date is:
+```C#
+var givenDateTime = new DateTime(1995, 8, 26);
+var zodiacSign = givenDateTime.GetZodiacSign();
+```
+
 #### More examples
 [Horoscope.Zodiac](https://github.com/ClydeDz/horoscope-nuget/blob/master/Src/Horoscope.TestConsole/ZodiacExamples.cs)   
 [Horoscope.ChineseZodiac](https://github.com/ClydeDz/horoscope-nuget/blob/master/Src/Horoscope.TestConsole/ChineseZodiacExamples.cs)
