@@ -16,6 +16,12 @@ namespace Horoscope.TestConsole
             Console.WriteLine($"\nZodiac details for {new DateTime(1966, 2, 12).ToShortDateString()}");
             Console.WriteLine($"Name: {zodiacSign.ZodiacName} English name: {zodiacSign.ZodiacEnglishTranslation} Duration: {zodiacSign.ZodiacDuration}");
 
+            // Another option would be:
+            var givenDate = new DateTime(1995, 8, 26);
+            var anotherZodiacSign = givenDate.GetZodiacSign();
+            Console.WriteLine($"\nZodiac details for {givenDate.ToShortDateString()}");
+            Console.WriteLine($"Name: {anotherZodiacSign.ZodiacName} English name: {anotherZodiacSign.ZodiacEnglishTranslation} Duration: {anotherZodiacSign.ZodiacDuration}");
+
             var capriconZodiacSign = Zodiac.GetZodiacSign(ZodiacSigns.Capricorn);
             Console.WriteLine($"\nZodiac duration for {ZodiacSigns.Capricorn}");
             Console.WriteLine(capriconZodiacSign.ZodiacDuration);
