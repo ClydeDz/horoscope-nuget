@@ -14,8 +14,8 @@
     <Description>A .NET library for zodiac signs. Get details on each zodiac sign, pass a date and know which zodiac sign it falls in or get a list of all zodiac signs. Now includes Chinese zodiac signs and elements!</Description>
     <Copyright>Copyright (c) 2018 Clyde D'Souza</Copyright>
 	<releaseNotes>Add extension methods option to DateTime objects to enable simpler, easier access to the Zodiac Signs.</releaseNotes>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
-    <FileVersion>1.0.0.0</FileVersion>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
+    <FileVersion>1.1.0.0</FileVersion>
     <PackageIconUrl></PackageIconUrl>
     <Product>Horoscope</Product>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
