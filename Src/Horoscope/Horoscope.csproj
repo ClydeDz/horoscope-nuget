@@ -5,7 +5,7 @@
     <Authors>Clyde D'Souza</Authors>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <PackageId>Horoscope</PackageId>
-    <Version>1.0.0</Version>
+    <Version>1.1.0</Version>
     <Company />
     <PackageLicenseUrl></PackageLicenseUrl>
     <RepositoryUrl>https://github.com/ClydeDz/horoscope-nuget</RepositoryUrl>
@@ -13,9 +13,9 @@
     <PackageTags>horoscope zodiac development library zodiac-signs chinese-zodiac chinese-horoscope yinyang chinese-elements yin-yang</PackageTags>
     <Description>A .NET library for zodiac signs. Get details on each zodiac sign, pass a date and know which zodiac sign it falls in or get a list of all zodiac signs. Now includes Chinese zodiac signs and elements!</Description>
     <Copyright>Copyright (c) 2018 Clyde D'Souza</Copyright>
-    <PackageReleaseNotes>Enable publicy visible comments. Add contributing guidelines and a pull request template to the GitHub repository. Use new icon format. More release notes here: https://github.com/ClydeDz/horoscope-nuget/releases</PackageReleaseNotes>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
-    <FileVersion>1.0.0.0</FileVersion>
+	<releaseNotes>Add extension methods option to DateTime objects to enable simpler, easier access to the Zodiac Signs.</releaseNotes>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
+    <FileVersion>1.1.0.0</FileVersion>
     <PackageIconUrl></PackageIconUrl>
     <Product>Horoscope</Product>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>

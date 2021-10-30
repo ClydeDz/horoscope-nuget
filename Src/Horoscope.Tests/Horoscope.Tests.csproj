@@ -59,6 +59,7 @@
     <Compile Include="Helpers\ZodiacHelperTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ChineseZodiacTest.cs" />
+    <Compile Include="DateTimeExtensionsTest.cs" />
     <Compile Include="ZodiacTest.cs" />
   </ItemGroup>
   <ItemGroup>
